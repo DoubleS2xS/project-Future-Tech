@@ -4,8 +4,11 @@
 @use 'utils';
 @use 'globals';
 
-@use 'blocks/icon';
-@use 'blocks/logo';
-@use 'blocks/burger-button';
-@use 'blocks/button';
-@use 'blocks/header';
+@use 'blocks/_icon';
+@use 'blocks/_logo';
+@use 'blocks/_button';
+@use 'blocks/_burger-button';
+@use 'blocks/_header';
+@use 'blocks/_badge';
+@use 'blocks/_footer';
+@use 'blocks/_soc1als';
