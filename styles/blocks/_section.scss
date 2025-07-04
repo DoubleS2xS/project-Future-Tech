@@ -20,15 +20,14 @@
         }
       }
     }
-  }
+    &-info{
+      display: grid;
+      align-items: start;
+      row-gap: rem(16);
 
-  &-info{
-    display: grid;
-    align-items: start;
-    row-gap: rem(16);
-
-    @include laptop{
-      row-gap: rem(10);
+      @include laptop{
+        row-gap: rem(10);
+      }
     }
   }
 
@@ -38,5 +37,9 @@
 
   &__body{
     border-block: var(--border);
+  }
+
+  &__link{
+    max-width: rem(360);
   }
 }
