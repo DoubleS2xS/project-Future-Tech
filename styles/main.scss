@@ -3,6 +3,8 @@
 @use 'variables';
 @use 'utils';
 @use 'globals';
+
+@use 'blocks/_expandable-content';
 @use 'blocks/_icon';
 @use 'blocks/_logo';
 @use 'blocks/_button';
@@ -37,3 +39,5 @@
 @use 'blocks/_news';
 @use 'blocks/_video-player';
 @use 'blocks/_video-card';
+@use 'blocks/_table-of-contents';
+@use 'blocks/_blog-details';
