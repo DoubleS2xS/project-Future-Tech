@@ -1,6 +1,6 @@
 @use '../helpers' as *;
 
-.tag{
+.tag {
   @include fluid-text(20, 14);
 
   padding: rem(6) rem(10);
@@ -9,7 +9,7 @@
   background-color: var(--color-dark-20);
   border-radius: rem(4);
 
-  @include laptop{
+  @include laptop {
     padding: rem(4) rem(8);
   }
 }

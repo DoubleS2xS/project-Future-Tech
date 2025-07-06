@@ -1,45 +1,51 @@
 @use '../helpers' as *;
 
-.section{
-  &__header{
+.section {
+  &__header {
     padding-block: fluid(120, 40);
-    background-color: (var(--color-dark-10));
+    background-color: var(--color-dark-10);
 
-    &-inner{
-      &:has(.section__link){
+    &-inner {
+      &:has(.section__actions) {
         display: grid;
         align-items: center;
         column-gap: 1rem;
 
-        @include mobile-above{
+        @include mobile-above {
           grid-template-columns: 1fr auto;
         }
 
-        @include mobile{
+        @include mobile {
           row-gap: rem(30);
         }
       }
     }
-    &-info{
+
+    &-info {
       display: grid;
       align-items: start;
       row-gap: rem(16);
 
-      @include laptop{
+      @include laptop {
         row-gap: rem(10);
       }
     }
   }
 
-  &__subtitle{
+  &__subtitle {
     justify-self: start;
   }
 
-  &__body{
+  &__body {
     border-block: var(--border);
   }
 
-  &__link{
+  &__actions,
+  &__link {
+    width: 100%;
+  }
+
+  &__link {
     max-width: rem(360);
   }
 }

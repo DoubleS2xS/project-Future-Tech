@@ -7,31 +7,30 @@
   align-items: center;
   column-gap: fluid(16, 8);
 
-  @include laptop{
+  @include laptop {
     --imageSize: #{rem(60)};
   }
 
-  &__image{
+  &__image {
     width: var(--imageSize);
-    border-radius: 50%;
     background-color: var(--color-dark-15);
-
+    border-radius: 50%;
   }
 
-  &__body{
+  &__body {
     display: grid;
 
-    @include laptop-above{
+    @include laptop-above {
       row-gap: rem(2);
     }
   }
 
-  &__name{
+  &__name {
     color: var(--color-light);
     font-weight: 600;
     font-size: rem(20);
 
-    @include laptop{
+    @include laptop {
       font-size: rem(18);
     }
   }
